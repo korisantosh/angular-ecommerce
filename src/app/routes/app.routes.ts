@@ -1,3 +1,4 @@
+import { Component } from '@angular/core';
 import { RegisterComponent } from './../pages/auth/register/register.component';
 import { AdminOrdersComponent } from './../pages/admin/admin-orders/admin-orders.component';
 import { AdminProductsComponent } from './../pages/admin/admin-products/admin-products.component';
@@ -8,6 +9,7 @@ import { ProductsComponent } from '../pages/products/products.component';
 import { ShoppingCartComponent } from '../pages/shopping-cart/shopping-cart.component';
 import { LoginComponent } from '../pages/auth/login/login.component';
 import { NotFoundComponent } from '../pages/not-found/not-found.component';
+import { MyOrdersComponent } from '../pages/my-orders/my-orders.component';
 
 export const ALL_ROUTES: any[] = [
     { path: '', component: HomeComponent },
@@ -17,6 +19,7 @@ export const ALL_ROUTES: any[] = [
     { path: 'order-success', component: OrderSuccessComponent },
     { path: 'login', component: LoginComponent },
     { path: 'login', component: RegisterComponent },
+    { path: 'my/orders', component: MyOrdersComponent },
     { path: 'admin/products', component: AdminProductsComponent },
     { path: 'admin/orders', component: AdminOrdersComponent },
     { path: '**', component: NotFoundComponent },
