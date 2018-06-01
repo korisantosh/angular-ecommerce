@@ -1,8 +1,8 @@
-import { PreventDefaultDirective } from './prevent-default.directive';
+import { ClickPreventDefault } from './prevent-default.directive';
 
 describe('PreventDefaultDirective', () => {
   it('should create an instance', () => {
-    const directive = new PreventDefaultDirective();
+    const directive = new ClickPreventDefault();
     expect(directive).toBeTruthy();
   });
 });

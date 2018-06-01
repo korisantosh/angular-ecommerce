@@ -26,7 +26,7 @@ import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.compo
 import { LoginComponent } from './pages/auth/login/login.component';
 import { RegisterComponent } from './pages/auth/register/register.component';
 
-import { ClickPreventDefault } from './directives/prevent-default.directive';
+import { ClickPreventDefault } from './directives/prevent-default/prevent-default.directive';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
