@@ -25,6 +25,8 @@
     "bootstrap": "^4.1.1",
     "core-js": "^2.5.4",
     "firebase": "^5.0.4",
+    "firebase-tools": "^3.18.5",
+    "g": "^2.0.1",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },

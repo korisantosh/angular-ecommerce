@@ -1,5 +1,5 @@
+import { environment } from './../environments/environment';
 import { ALL_ROUTES } from './routes/app.routes';
-import { firebase } from './../environments/firebase';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -50,7 +50,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
   ],
   imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(firebase),
+    AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     RouterModule.forRoot(ALL_ROUTES),
