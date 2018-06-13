@@ -1,3 +1,4 @@
+import { AuthGuardService } from './services/auth-guard/auth-guard.service';
 import { environment } from './../environments/environment';
 import { ALL_ROUTES } from './routes/app.routes';
 
@@ -28,6 +29,7 @@ import { RegisterComponent } from './pages/auth/register/register.component';
 
 import { ClickPreventDefault } from './directives/prevent-default/prevent-default.directive';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { AuthService } from './services/auth/auth.service';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,10 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     RouterModule.forRoot(ALL_ROUTES),
     NgbModule.forRoot(),
   ],
-  providers: [],
+  providers: [
+    AuthService,
+    AuthGuardService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
