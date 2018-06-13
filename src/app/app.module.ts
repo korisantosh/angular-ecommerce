@@ -1,3 +1,5 @@
+import { AdminAuthGuardService } from './services/admin/admin-auth-guard.service';
+import { UserService } from './services/user/user.service';
 import { AuthGuardService } from './services/auth-guard/auth-guard.service';
 import { environment } from './../environments/environment';
 import { ALL_ROUTES } from './routes/app.routes';
@@ -60,7 +62,9 @@ import { AuthService } from './services/auth/auth.service';
   ],
   providers: [
     AuthService,
-    AuthGuardService
+    AuthGuardService,
+    AdminAuthGuardService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })
